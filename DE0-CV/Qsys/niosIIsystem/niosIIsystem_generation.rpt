@@ -1,0 +1,112 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate /home/chris/chris/Fpga/DE0-CV/Qsys/niosIIsystem.qsys --block-symbol-file --output-directory=/home/chris/chris/Fpga/DE0-CV/Qsys/niosIIsystem --family="Cyclone V" --part=5CEBA4F23C7
+Progress: Loading Qsys/niosIIsystem.qsys
+Progress: Reading input file
+Progress: Adding Jtag_uart [altera_avalon_jtag_uart 16.0]
+Progress: Parameterizing module Jtag_uart
+Progress: Adding SRAM [altera_avalon_onchip_memory2 16.0]
+Progress: Parameterizing module SRAM
+Progress: Adding main_clock [clock_source 16.0]
+Progress: Parameterizing module main_clock
+Progress: Adding nios2_core [altera_nios2_gen2 16.0]
+Progress: Parameterizing module nios2_core
+Progress: Adding systemID [altera_avalon_sysid_qsys 16.0]
+Progress: Parameterizing module systemID
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: niosIIsystem.Jtag_uart: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: niosIIsystem.systemID: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: niosIIsystem.systemID: Time stamp will be automatically updated when this component is generated.
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate /home/chris/chris/Fpga/DE0-CV/Qsys/niosIIsystem.qsys --synthesis=VERILOG --output-directory=/home/chris/chris/Fpga/DE0-CV/Qsys/niosIIsystem/synthesis --family="Cyclone V" --part=5CEBA4F23C7
+Progress: Loading Qsys/niosIIsystem.qsys
+Progress: Reading input file
+Progress: Adding Jtag_uart [altera_avalon_jtag_uart 16.0]
+Progress: Parameterizing module Jtag_uart
+Progress: Adding SRAM [altera_avalon_onchip_memory2 16.0]
+Progress: Parameterizing module SRAM
+Progress: Adding main_clock [clock_source 16.0]
+Progress: Parameterizing module main_clock
+Progress: Adding nios2_core [altera_nios2_gen2 16.0]
+Progress: Parameterizing module nios2_core
+Progress: Adding systemID [altera_avalon_sysid_qsys 16.0]
+Progress: Parameterizing module systemID
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: niosIIsystem.Jtag_uart: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: niosIIsystem.systemID: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: niosIIsystem.systemID: Time stamp will be automatically updated when this component is generated.
+Info: niosIIsystem: Generating niosIIsystem "niosIIsystem" for QUARTUS_SYNTH
+Info: Jtag_uart: Starting RTL generation for module 'niosIIsystem_Jtag_uart'
+Info: Jtag_uart:   Generation command is [exec /home/chris/altera/16.0/quartus/linux64/perl/bin/perl -I /home/chris/altera/16.0/quartus/linux64/perl/lib -I /home/chris/altera/16.0/quartus/sopc_builder/bin/europa -I /home/chris/altera/16.0/quartus/sopc_builder/bin/perl_lib -I /home/chris/altera/16.0/quartus/sopc_builder/bin -I /home/chris/altera/16.0/quartus/../ip/altera/sopc_builder_ip/common -I /home/chris/altera/16.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- /home/chris/altera/16.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=niosIIsystem_Jtag_uart --dir=/tmp/alt7347_3723364196522902703.dir/0001_Jtag_uart_gen/ --quartus_dir=/home/chris/altera/16.0/quartus --verilog --config=/tmp/alt7347_3723364196522902703.dir/0001_Jtag_uart_gen//niosIIsystem_Jtag_uart_component_configuration.pl  --do_build_sim=0  ]
+Info: Jtag_uart: Done RTL generation for module 'niosIIsystem_Jtag_uart'
+Info: Jtag_uart: "niosIIsystem" instantiated altera_avalon_jtag_uart "Jtag_uart"
+Info: SRAM: Starting RTL generation for module 'niosIIsystem_SRAM'
+Info: SRAM:   Generation command is [exec /home/chris/altera/16.0/quartus/linux64/perl/bin/perl -I /home/chris/altera/16.0/quartus/linux64/perl/lib -I /home/chris/altera/16.0/quartus/sopc_builder/bin/europa -I /home/chris/altera/16.0/quartus/sopc_builder/bin/perl_lib -I /home/chris/altera/16.0/quartus/sopc_builder/bin -I /home/chris/altera/16.0/quartus/../ip/altera/sopc_builder_ip/common -I /home/chris/altera/16.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- /home/chris/altera/16.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=niosIIsystem_SRAM --dir=/tmp/alt7347_3723364196522902703.dir/0002_SRAM_gen/ --quartus_dir=/home/chris/altera/16.0/quartus --verilog --config=/tmp/alt7347_3723364196522902703.dir/0002_SRAM_gen//niosIIsystem_SRAM_component_configuration.pl  --do_build_sim=0  ]
+Info: SRAM: Done RTL generation for module 'niosIIsystem_SRAM'
+Info: SRAM: "niosIIsystem" instantiated altera_avalon_onchip_memory2 "SRAM"
+Info: nios2_core: "niosIIsystem" instantiated altera_nios2_gen2 "nios2_core"
+Info: systemID: "niosIIsystem" instantiated altera_avalon_sysid_qsys "systemID"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "niosIIsystem" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: irq_mapper: "niosIIsystem" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "niosIIsystem" instantiated altera_reset_controller "rst_controller"
+Info: cpu: Starting RTL generation for module 'niosIIsystem_nios2_core_cpu'
+Info: cpu:   Generation command is [exec /home/chris/altera/16.0/quartus/linux64//eperlcmd -I /home/chris/altera/16.0/quartus/linux64//perl/lib -I /home/chris/altera/16.0/quartus/sopc_builder/bin/europa -I /home/chris/altera/16.0/quartus/sopc_builder/bin/perl_lib -I /home/chris/altera/16.0/quartus/sopc_builder/bin -I /home/chris/altera/16.0/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I /home/chris/altera/16.0/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I /home/chris/altera/16.0/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I /home/chris/altera/16.0/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- /home/chris/altera/16.0/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=niosIIsystem_nios2_core_cpu --dir=/tmp/alt7347_3723364196522902703.dir/0006_cpu_gen/ --quartus_bindir=/home/chris/altera/16.0/quartus/linux64/ --verilog --config=/tmp/alt7347_3723364196522902703.dir/0006_cpu_gen//niosIIsystem_nios2_core_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2017.06.30 11:47:41 (*) Starting Nios II generation
+Info: cpu: # 2017.06.30 11:47:41 (*)   Checking for plaintext license.
+Info: cpu: # 2017.06.30 11:47:42 (*)   Plaintext license not found.
+Info: cpu: # 2017.06.30 11:47:42 (*)   Checking for encrypted license (non-evaluation).
+Info: cpu: # 2017.06.30 11:47:42 (*)   Encrypted license not found.  Defaulting to OCP evaluation license (produces a time-limited SOF)
+Info: cpu: # 2017.06.30 11:47:42 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2017.06.30 11:47:42 (*)   Creating all objects for CPU
+Info: cpu: # 2017.06.30 11:47:42 (*)     Testbench
+Info: cpu: # 2017.06.30 11:47:42 (*)     Instruction decoding
+Info: cpu: # 2017.06.30 11:47:42 (*)       Instruction fields
+Info: cpu: # 2017.06.30 11:47:42 (*)       Instruction decodes
+Info: cpu: # 2017.06.30 11:47:43 (*)       Signals for RTL simulation waveforms
+Info: cpu: # 2017.06.30 11:47:43 (*)       Instruction controls
+Info: cpu: # 2017.06.30 11:47:43 (*)     Pipeline frontend
+Info: cpu: # 2017.06.30 11:47:43 (*)     Pipeline backend
+Info: cpu: # 2017.06.30 11:47:44 (*)   Generating RTL from CPU objects
+Info: cpu: # 2017.06.30 11:47:46 (*)   Creating encrypted RTL
+Info: cpu: # 2017.06.30 11:47:46 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'niosIIsystem_nios2_core_cpu'
+Info: cpu: "nios2_core" instantiated altera_nios2_gen2_unit "cpu"
+Info: nios2_core_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "nios2_core_data_master_translator"
+Info: Jtag_uart_avalon_jtag_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "Jtag_uart_avalon_jtag_slave_translator"
+Info: nios2_core_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "nios2_core_data_master_agent"
+Info: Jtag_uart_avalon_jtag_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "Jtag_uart_avalon_jtag_slave_agent"
+Info: Jtag_uart_avalon_jtag_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "Jtag_uart_avalon_jtag_slave_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: router_004: "mm_interconnect_0" instantiated altera_merlin_router "router_004"
+Info: nios2_core_data_master_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "nios2_core_data_master_limiter"
+Info: Reusing file /home/chris/chris/Fpga/DE0-CV/Qsys/niosIIsystem/synthesis/submodules/altera_avalon_sc_fifo.v
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: cmd_mux_002: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_002"
+Info: Reusing file /home/chris/chris/Fpga/DE0-CV/Qsys/niosIIsystem/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_demux_002: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_002"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file /home/chris/chris/Fpga/DE0-CV/Qsys/niosIIsystem/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
+Info: Reusing file /home/chris/chris/Fpga/DE0-CV/Qsys/niosIIsystem/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: niosIIsystem: Done "niosIIsystem" with 29 modules, 49 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

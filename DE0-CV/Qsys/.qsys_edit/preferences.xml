@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable filter="All Interfaces">
+  <columns>
+   <connections preferredWidth="127" />
+   <irq preferredWidth="34" />
+  </columns>
+ </systemtable>
+ <library
+   expandedCategories="Project,Library,Library/University Program,Library/Processors and Peripherals,Library/Basic Functions/Simulation; Debug and Verification,Library/Basic Functions,Library/Processors and Peripherals/Hard Processor Systems,Library/Basic Functions/Simulation; Debug and Verification/Debug and Performance,Library/University Program/Clock" />
+ <window width="1855" height="1056" x="65" y="24" />
+</preferences>
